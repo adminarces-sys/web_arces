@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ARCES Alpha Refrigeration, Climate and Electrical Systems. Refrigeración industrial y comercial, aire acondicionado, clima y sistemas eléctricos para tu empresa u hogar.">
+    <meta name="theme-color" content="#0b2e4f">
+    <title>ARCES Alpha | Refrigeración, Clima y Sistemas Eléctricos</title>
+    <link rel="icon" href="logo-transparente.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+<a href="#inicio" class="logo" aria-label="ARCES Alpha - Inicio">
+                <img class="logo-img" src="logo3-transparente.png" alt="ARCES Alpha" width="640" height="592">
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+
+            <nav class="menu" aria-label="Navegación principal">
+                <ul class="menu-lista">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li class="menu-cta-movil">
+                        <a href="https://wa.me/526771078799?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20servicio." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                            <svg class="icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.051 24c-2.941 0-5.688-.987-7.927-2.793L0 22.63l2.438-3.86A11.868 11.868 0 01.109 12C.109 5.383 5.446.048 12.05.048c6.605 0 11.943 5.335 11.943 11.952 0 6.617-5.338 11.952-11.942 11.952zm5.421-17.187a9.873 9.873 0 00-4.498-1.047c-4.913 0-8.672 3.66-8.672 8.175 0 1.445.51 2.793 1.434 3.868l-.933 2.917 3.008-.917a8.822 8.822 0 004.164 1.054c4.913 0 8.671-3.66 8.671-8.175a8.13 8.13 0 00-3.174-5.875z"/></svg>
+                            Cotizar por WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/526771078799?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20servicio." target="_blank" rel="noopener" class="btn btn-whatsapp btn-nav">
+                <svg class="icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.051 24c-2.941 0-5.688-.987-7.927-2.793L0 22.63l2.438-3.86A11.868 11.868 0 01.109 12C.109 5.383 5.446.048 12.05.048c6.605 0 11.943 5.335 11.943 11.952 0 6.617-5.338 11.952-11.942 11.952zm5.421-17.187a9.873 9.873 0 00-4.498-1.047c-4.913 0-8.672 3.66-8.672 8.175 0 1.445.51 2.793 1.434 3.868l-.933 2.917 3.008-.917a8.822 8.822 0 004.164 1.054c4.913 0 8.671-3.66 8.671-8.175a8.13 8.13 0 00-3.174-5.875z"/></svg>
+                Cotizar ahora
+            </a>
+
+            <label for="menu-toggle" class="hamburguesa" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-contenido">
+                    <p class="hero-badge">Refrigeración · Sistemas de Aire Acondicionado · Sistemas Eléctricos</p>
+                    <h1>❄️ Refrigeración</h1>
+                    <h1>🌡️ Aire acondicionado</h1>
+                    <h1>⚡ Instalaciones eléctricas</h1>
+                    <h1>Soluciones para tu hogar o tu negocio</h1>
+                    <p class="hero-sub">
+                        En <strong>ARCES</strong> diseñamos, instalamos y damos mantenimiento a equipos de
+                        refrigeración, aire acondicionado y sistemas eléctricos. Soluciones confiables, eficientes y a la medida.
+                    </p>
+                    <div class="hero-acciones">
+                        <a href="https://wa.me/526771078799?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                            <svg class="icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.051 24c-2.941 0-5.688-.987-7.927-2.793L0 22.63l2.438-3.86A11.868 11.868 0 01.109 12C.109 5.383 5.446.048 12.05.048c6.605 0 11.943 5.335 11.943 11.952 0 6.617-5.338 11.952-11.942 11.952zm5.421-17.187a9.873 9.873 0 00-4.498-1.047c-4.913 0-8.672 3.66-8.672 8.175 0 1.445.51 2.793 1.434 3.868l-.933 2.917 3.008-.917a8.822 8.822 0 004.164 1.054c4.913 0 8.671-3.66 8.671-8.175a8.13 8.13 0 00-3.174-5.875z"/></svg>
+                            Cotizar por WhatsApp
+                        </a>
+                        <a href="#servicios" class="btn btn-linea">Ver servicios</a>
+                    </div>
+                    <ul class="hero-puntos">
+                        <li>Respuesta rápida y diagnóstico en sitio</li>
+                        <li>Técnicos certificados</li>
+                        <li>Garantía de servicio</li>
+                    </ul>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="cubo">
+                        <div class="cubo-cara cara-refri">
+                            <span class="cara-etiqueta">Sistemas de Refrigeración</span>
+                        </div>
+                        <div class="cubo-cara cara-aire">
+                            <span class="cara-etiqueta">Aire Acondicionado</span>
+                        </div>
+                        <div class="cubo-cara cara-logo">
+                            <img src="logo2-transparente.png" alt="ARCES Alpha">
+                        </div>
+                    </div>
+                    <span class="brillo brillo-1"></span>
+                    <span class="brillo brillo-2"></span>
+                </div>
+            </div>
+            <div class="container hero-stats">
+                <div class="stat">
+                    <span class="stat-num">10+</span>
+                    <span class="stat-txt">Años de experiencia</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">500+</span>
+                    <span class="stat-txt">Proyectos entregados</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">24/7</span>
+                    <span class="stat-txt">Emergencias atendidas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-txt">Satisfacción garantizada</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="servicios">
+            <div class="container">
+                <div class="seccion-titulo">
+                    <p class="etiqueta">Nuestros servicios</p>
+                    <h2>Soluciones completas para Refrigeradores, Cuartos Fríos, Aire Acondicionado e Instalaciones Eléctricas</h2>
+                    <p>Cubrimos todo el ciclo de vida de tu equipo: instalación, diagnóstico, mantenimiento preventivo y reparación.</p>
+                </div>
+                <div class="grid-cards">
+                    <article class="card">
+                        <div class="card-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 2v5M12 12v5M12 17l-2.5 2.5M12 22l-3-3M12 22l3-3"/>
+                                <path d="M12 12L3 12M12 12L21 12"/>
+                                <path d="M5.6 5.6l-2.1 2 2.1 2M18.4 5.6l2.1 2-2.1 2"/>
+                                <path d="M5.6 18.4l-2.1-2 2.1-2M18.4 18.4l2.1-2-2.1-2"/>
+                            </svg>
+                        </div>
+                        <h3>Refrigeración</h3>
+                        <p>Instalación y mantenimiento de cámaras frías, cuartos fríos, vitrinas y equipos de refrigeración comercial e industrial.</p>
+                        <ul>
+                            <li>Refrigeradores domésticos</li>
+                            <li>Cámaras frías y de congelación</li>
+                            <li>Refrigeración comercial</li>
+                            <li>Reparación de emergencia</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <div class="card-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 9v9M4 18h16M6 9l6 12M18 9l-6 12"/>
+                                <path d="M12 9a4 4 0 100-8 4 4 0 000 8z"/>
+                            </svg>
+                        </div>
+                        <h3>Aire Acondicionado</h3>
+                        <p>Ventas, instalación y servicio de equipos mini split, centrales y de precisión para oficinas, comercios y hogares.</p>
+                        <ul>
+                            <li>Mini split y centrales</li>
+                            <li>Limpieza y carga de gas</li>
+                            <li>Mantenimiento preventivo</li>
+                            <li>Mantenimiento correctivo (Reparación)</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <div class="card-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 3v3M12 10v4M12 17v4"/>
+                                <path d="M5.6 5.6l1.6 1.6M5.6 18.4l1.6-1.6M18.4 5.6L16.8 7.2M18.4 18.4l-1.6-1.6"/>
+                                <path d="M9.5 21h5"/>
+                            </svg>
+                        </div>
+                        <h3>Sistemas Eléctricos</h3>
+                        <p>Instalaciones y reparaciones eléctricas residenciales, comerciales e industriales con altos estándares de seguridad.</p>
+                        <ul>
+                            <li>Tableros de control para sistemas de bombeo</li>
+                            <li>Circuitos para equipos de refrigeración (Cuartos Fríos y Cámaras de congelación)</li>
+                            <li>Instalaciones eléctricas</li>
+                            <li>Revisiones y diagnósticos</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <div class="card-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 3l9 5-9 5-9-5 9-5z"/>
+                                <path d="M4.5 10.5L12 14.5l7.5-4"/>
+                                <path d="M4.5 15L12 19l7.5-4"/>
+                            </svg>
+                        </div>
+                        <h3>Mantenimiento Preventivo</h3>
+                        <p>Planes de mantenimiento que alargan la vida útil de tus equipos y reducen costos de energía y reparaciones.</p>
+                        <ul>
+                            <li>Planes a la medida</li>
+                            <li>Ahorro de energía</li>
+                            <li>Reportes técnicos</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-oscura" id="nosotros">
+            <div class="container nosotros-grid">
+                <div class="nosotros-texto">
+                    <p class="etiqueta etiqueta-clara">Nosotros</p>
+                    <h2>Especialistas en Refrigeración y Aire Acondicionado.</h2>
+                    <p>
+                        En ARCES sabemos que un mal funcionamiento en tu equipo significa pérdidas para tu negocio.
+                        Por eso trabajamos con diagnóstico preciso, refacciones de calidad y tiempos de respuesta inmediatos.
+                    </p>
+                    <p>
+                        Nuestro equipo de técnicos certificados atiende tanto empresas como hogares, con un trato claro,
+                        precios transparentes y la garantía de acompañarte durante todo el proceso de reparación.
+                    </p>
+                    <div class="nosotros-items">
+                        <div class="item">
+                            <span class="check" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 7"/></svg>
+                            </span>
+                            <span>Técnicos certificados y capacitados</span>
+                        </div>
+                        <div class="item">
+                            <span class="check" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 7"/></svg>
+                            </span>
+                            <span>Precios claros y sin sorpresas</span>
+                        </div>
+                        <div class="item">
+                            <span class="check" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 7"/></svg>
+                            </span>
+                            <span>Garantía en todos los servicios</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/526771078799?text=Hola%2C%20quiero%20agendar%20una%20visita%20de%20diagn%C3%B3stico." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                        <svg class="icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.051 24c-2.941 0-5.688-.987-7.927-2.793L0 22.63l2.438-3.86A11.868 11.868 0 01.109 12C.109 5.383 5.446.048 12.05.048c6.605 0 11.943 5.335 11.943 11.952 0 6.617-5.338 11.952-11.942 11.952zm5.421-17.187a9.873 9.873 0 00-4.498-1.047c-4.913 0-8.672 3.66-8.672 8.175 0 1.445.51 2.793 1.434 3.868l-.933 2.917 3.008-.917a8.822 8.822 0 004.164 1.054c4.913 0 8.671-3.66 8.671-8.175a8.13 8.13 0 00-3.174-5.875z"/></svg>
+                        Agendar diagnóstico
+                    </a>
+                </div>
+                <div class="nosotros-visual">
+                    <div class="visual-tarjeta">
+                        <span class="visual-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9.5 12l2 2 3.5-4"/>
+                            </svg>
+                        </span>
+                        <strong>Garantía real</strong>
+                        <span>Respaldamos cada servicio con garantía escrita.</span>
+                    </div>
+                    <div class="visual-tarjeta">
+                        <span class="visual-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </span>
+                        <strong>Respuesta rápida</strong>
+                        <span>Atención prioritaria para urgencias técnicas.</span>
+                    </div>
+                    <div class="visual-tarjeta">
+                        <span class="visual-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 2v4M12 18v4M4.9 6.9L8 10M16 14l3.1 3.1M4.9 17.1L8 14M16 10l3.1-3.1"/>
+                                <circle cx="12" cy="12" r="4"/>
+                            </svg>
+                        </span>
+                        <strong>Eficiencia energética</strong>
+                        <span>Optimizamos equipos para reducir tu consumo.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion" id="proceso">
+            <div class="container">
+                <div class="seccion-titulo">
+                    <p class="etiqueta">Cómo trabajamos</p>
+                    <h2>De la llamada a la solución en 4 pasos</h2>
+                </div>
+                <div class="grid-pasos">
+                    <div class="paso">
+                        <span class="paso-num">01</span>
+                        <h3>Contáctanos</h3>
+                        <p>Escríbenos por WhatsApp o llámanos y cuéntanos tu situación.</p>
+                    </div>
+                    <div class="paso">
+                        <span class="paso-num">02</span>
+                        <h3>Diagnóstico</h3>
+                        <p>Visitamos tu sitio, evaluamos el equipo y entregamos un diagnóstico claro.</p>
+                    </div>
+                    <div class="paso">
+                        <span class="paso-num">03</span>
+                        <h3>Propuesta</h3>
+                        <p>Recibes una cotización transparente antes de iniciar cualquier trabajo.</p>
+                    </div>
+                    <div class="paso">
+                        <span class="paso-num">04</span>
+                        <h3>Ejecución</h3>
+                        <p>Realizamos el servicio con garantía y pruebas finales de funcionamiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-clara" id="testimonios">
+            <div class="container">
+                <div class="seccion-titulo">
+                    <p class="etiqueta">Testimonios</p>
+                    <h2>Lo que dicen nuestros clientes</h2>
+                </div>
+                <div class="grid-testimonios">
+                    <figure class="testimonio">
+                        <p class="estrellas" aria-label="5 de 5 estrellas">★★★★★</p>
+                        <blockquote>“Atendieron una falla en la cámara de refrigeración en nuestra pastelería el mismo día. Servicio excelente.”</blockquote>
+                        <figcaption>
+                            <strong>María G.</strong>
+                            <span>Gerente de operaciones · Pastelería</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="testimonio">
+                        <p class="estrellas" aria-label="5 de 5 estrellas">★★★★★</p>
+                        <blockquote>“Instalaron los aires de toda mi casa. Recomendados.”</blockquote>
+                        <figcaption>
+                            <strong>Carlos R.</strong>
+                            <span>Particular</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="testimonio">
+                        <p class="estrellas" aria-label="5 de 5 estrellas">★★★★★</p>
+                        <blockquote>“El plan de mantenimiento preventivo mantiene mis equipos en condiciones siempre. Técnicos puntuales y amables.”</blockquote>
+                        <figcaption>
+                            <strong>Lucía M.</strong>
+                            <span>Administradora · Supermercado</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta-inner">
+                <h2>¿Tienes una emergencia o necesitas una cotización?</h2>
+                <p>Háblanos hoy mismo y recibe atención personalizada en minutos.</p>
+                <a href="https://wa.me/526771078799?text=Hola%2C%20necesito%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener" class="btn btn-whatsapp btn-grande">
+                    <svg class="icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.051 24c-2.941 0-5.688-.987-7.927-2.793L0 22.63l2.438-3.86A11.868 11.868 0 01.109 12C.109 5.383 5.446.048 12.05.048c6.605 0 11.943 5.335 11.943 11.952 0 6.617-5.338 11.952-11.942 11.952zm5.421-17.187a9.873 9.873 0 00-4.498-1.047c-4.913 0-8.672 3.66-8.672 8.175 0 1.445.51 2.793 1.434 3.868l-.933 2.917 3.008-.917a8.822 8.822 0 004.164 1.054c4.913 0 8.671-3.66 8.671-8.175a8.13 8.13 0 00-3.174-5.875z"/></svg>
+                    Escríbenos por WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <section class="seccion" id="contacto">
+            <div class="container contacto-grid">
+                <div class="contacto-info">
+                    <p class="etiqueta">Contacto</p>
+                    <h2>Hablemos de tu proyecto</h2>
+                    <p>Estamos listos para ayudarte. Elige el medio que prefieras y te responderemos a la brevedad.</p>
+                    <div class="contacto-item">
+                        <span class="contacto-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3A19.5 19.5 0 013 6.8 2 2 0 014.9 4.5h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.7 12.6a16 16 0 004 4l1.5-1.4a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.9 2z"/></svg>
+                        </span>
+                        <div>
+                            <strong>Teléfono / WhatsApp</strong>
+                            <a href="https://wa.me/526771078799" target="_blank" rel="noopener">+52 677 107 8799</a>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <span class="contacto-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+                        </span>
+                        <div>
+                            <strong>Correo electrónico</strong>
+                            <a href="mailto:admin.arces@gmail.com">admin.arces@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <span class="contacto-icono">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </span>
+                        <div>
+                            <strong>Área de servicio</strong>
+                            <span>Río Grande, Zacatecas y alrededores</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/526771078799?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20sus%20servicios." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                        <svg class="icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.051 24c-2.941 0-5.688-.987-7.927-2.793L0 22.63l2.438-3.86A11.868 11.868 0 01.109 12C.109 5.383 5.446.048 12.05.048c6.605 0 11.943 5.335 11.943 11.952 0 6.617-5.338 11.952-11.942 11.952zm5.421-17.187a9.873 9.873 0 00-4.498-1.047c-4.913 0-8.672 3.66-8.672 8.175 0 1.445.51 2.793 1.434 3.868l-.933 2.917 3.008-.917a8.822 8.822 0 004.164 1.054c4.913 0 8.671-3.66 8.671-8.175a8.13 8.13 0 00-3.174-5.875z"/></svg>
+                        Contactar ahora
+                    </a>
+                </div>
+                <div class="contacto-visual">
+                    <div class="tarjeta-cta">
+                        <h3>¿Prefieres atención directa?</h3>
+                        <p>Escanea con tu celular o haz clic en el botón para abrir WhatsApp y empezar a chatear con nosotros.</p>
+                        <a href="https://wa.me/526771078799" target="_blank" rel="noopener" class="boton-qr" aria-label="Escanea el código QR para abrir WhatsApp">
+                            <img src="qr-whatsapp.png" alt="Código QR de WhatsApp" width="462" height="462">
+                        </a>
+                        <span class="tarjeta-cta-hint">WhatsApp · Escanea o haz clic</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-marca">
+<a href="#inicio" class="logo">
+                    <img class="logo-img" src="logo-transparente.png" alt="ARCES Alpha" width="640" height="522">
+                </a>
+                <p>Refrigeration, Climate &amp; Electrical Systems. Soluciones confiables de refrigeración, aire acondicionado y sistemas eléctricos.</p>
+            </div>
+            <nav class="footer-col" aria-label="Enlaces del sitio">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li>Refrigeración</li>
+                    <li>Aire acondicionado</li>
+                    <li>Sistemas eléctricos</li>
+                    <li>Mantenimiento preventivo</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="https://wa.me/526771078799" target="_blank" rel="noopener">+52 677 107 8799</a></li>
+                    <li><a href="mailto:contacto@arcesalpha.com">contacto@arcesalpha.com</a></li>
+                    <li>Zona industrial y comercios</li>
+                    <li>Lun – Sáb · 8:00 – 19:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-frase">
+            <p class="frase">!Enjoy the ride¡</p>
+            <a href="https://wa.me/526771078799?text=Hola%2C%20me%20gustar%C3%ADa%20hablar%20con%20alguien." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                <svg class="icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.051 24c-2.941 0-5.688-.987-7.927-2.793L0 22.63l2.438-3.86A11.868 11.868 0 01.109 12C.109 5.383 5.446.048 12.05.048c6.605 0 11.943 5.335 11.943 11.952 0 6.617-5.338 11.952-11.942 11.952zm5.421-17.187a9.873 9.873 0 00-4.498-1.047c-4.913 0-8.672 3.66-8.672 8.175 0 1.445.51 2.793 1.434 3.868l-.933 2.917 3.008-.917a8.822 8.822 0 004.164 1.054c4.913 0 8.671-3.66 8.671-8.175a8.13 8.13 0 00-3.174-5.875z"/></svg>
+                Escríbenos por WhatsApp
+            </a>
+        </div>
+        <div class="container footer-barra">
+            <p>© <span id="anio">2026</span> ARCES Alpha Refrigeration, Climate &amp; Electrical Systems. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/526771078799?text=Hola%2C%20quiero%20informaci%C3%B3n." target="_blank" rel="noopener" class="flotante" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.051 24c-2.941 0-5.688-.987-7.927-2.793L0 22.63l2.438-3.86A11.868 11.868 0 01.109 12C.109 5.383 5.446.048 12.05.048c6.605 0 11.943 5.335 11.943 11.952 0 6.617-5.338 11.952-11.942 11.952zm5.421-17.187a9.873 9.873 0 00-4.498-1.047c-4.913 0-8.672 3.66-8.672 8.175 0 1.445.51 2.793 1.434 3.868l-.933 2.917 3.008-.917a8.822 8.822 0 004.164 1.054c4.913 0 8.671-3.66 8.671-8.175a8.13 8.13 0 00-3.174-5.875z"/></svg>
+    </a>
+
+</body>
+</html>
