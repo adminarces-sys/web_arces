@@ -13,6 +13,7 @@
     --sombra: 0 10px 30px rgba(6, 59, 112, 0.12);
     --sombra-suave: 0 6px 18px rgba(6, 59, 112, 0.08);
     --radio: 16px;
+    --alto-header: 90px;
     --fuente-titulo: 'Montserrat', sans-serif;
     --fuente-cuerpo: 'Inter', sans-serif;
 }
@@ -25,7 +26,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 232px;
+    scroll-padding-top: calc(var(--alto-header) + 12px);
 }
 
 body {
@@ -130,7 +131,7 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    height: 224px;
+    height: var(--alto-header);
 }
 
 .logo {
@@ -141,7 +142,7 @@ h1, h2, h3, h4 {
 
 .logo-img {
     width: auto;
-    max-height: 200px;
+    max-height: 76px;
     border-radius: 10px;
     display: block;
 }
@@ -152,10 +153,6 @@ h1, h2, h3, h4 {
     background: var(--blanco);
     border-radius: 12px;
     box-shadow: 0 4px 14px rgba(6, 59, 112, 0.25);
-}
-
-.menu-toggle {
-    display: none;
 }
 
 .menu-lista {
@@ -194,6 +191,18 @@ h1, h2, h3, h4 {
     gap: 5px;
     cursor: pointer;
     padding: 8px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.hamburguesa:hover {
+    background: rgba(8, 122, 201, 0.08);
+}
+
+.hamburguesa:focus-visible {
+    outline: 2px solid var(--azul-corporativo);
+    outline-offset: 2px;
 }
 
 .hamburguesa span {
@@ -209,7 +218,7 @@ h1, h2, h3, h4 {
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 260px 0 0;
+    padding: calc(var(--alto-header) + 56px) 0 0;
     background:
         radial-gradient(1000px 500px at 85% -10%, rgba(0, 168, 240, 0.35), transparent 60%),
         radial-gradient(800px 400px at 0% 30%, rgba(6, 59, 112, 0.55), transparent 60%),
@@ -246,6 +255,18 @@ h1, h2, h3, h4 {
     font-size: clamp(34px, 4.4vw, 54px);
     font-weight: 800;
     margin-bottom: 20px;
+}
+
+.hero-linea {
+    display: block;
+}
+
+.hero-linea + .hero-linea {
+    margin-top: 20px;
+}
+
+.hero-emoji {
+    font-weight: 400;
 }
 
 .hero-sub {
@@ -1088,7 +1109,7 @@ h1, h2, h3, h4 {
 
     .menu-lista {
         position: fixed;
-        top: 224px;
+        top: var(--alto-header);
         left: 0;
         right: 0;
         flex-direction: column;
@@ -1119,26 +1140,26 @@ h1, h2, h3, h4 {
         width: 100%;
     }
 
-    .menu-toggle:checked ~ .menu .menu-lista {
+    .menu-abierto .menu-lista {
         transform: translateY(0);
         opacity: 1;
         pointer-events: auto;
     }
 
-    .menu-toggle:checked ~ .hamburguesa span:nth-child(1) {
+    .menu-abierto .hamburguesa span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .menu-toggle:checked ~ .hamburguesa span:nth-child(2) {
+    .menu-abierto .hamburguesa span:nth-child(2) {
         opacity: 0;
     }
 
-    .menu-toggle:checked ~ .hamburguesa span:nth-child(3) {
+    .menu-abierto .hamburguesa span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
     .hero {
-        padding-top: 250px;
+        padding-top: calc(var(--alto-header) + 40px);
     }
 
     .hero-grid {
@@ -1163,7 +1184,7 @@ h1, h2, h3, h4 {
 
 @media (max-width: 600px) {
     .hero {
-        padding-top: 250px;
+        padding-top: calc(var(--alto-header) + 32px);
     }
 
     .hero-sub {

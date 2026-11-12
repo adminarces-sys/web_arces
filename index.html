@@ -16,13 +16,11 @@
 
     <header class="header">
         <div class="container header-inner">
-<a href="#inicio" class="logo" aria-label="ARCES Alpha - Inicio">
+            <a href="#inicio" class="logo" aria-label="ARCES Alpha - Inicio">
                 <img class="logo-img" src="logo3-transparente.png" alt="ARCES Alpha" width="640" height="592">
             </a>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
-
-            <nav class="menu" aria-label="Navegación principal">
+            <nav class="menu" id="menu-principal" aria-label="Navegación principal">
                 <ul class="menu-lista">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
@@ -43,11 +41,11 @@
                 Cotizar ahora
             </a>
 
-            <label for="menu-toggle" class="hamburguesa" aria-label="Abrir menú">
+            <button type="button" class="hamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
                 <span></span>
                 <span></span>
                 <span></span>
-            </label>
+            </button>
         </div>
     </header>
 
@@ -56,10 +54,12 @@
             <div class="container hero-grid">
                 <div class="hero-contenido">
                     <p class="hero-badge">Refrigeración · Sistemas de Aire Acondicionado · Sistemas Eléctricos</p>
-                    <h1>❄️ Refrigeración</h1>
-                    <h1>🌡️ Aire acondicionado</h1>
-                    <h1>⚡ Instalaciones eléctricas</h1>
-                    <h1>Soluciones para tu hogar o tu negocio</h1>
+                    <h1>
+                        <span class="hero-linea"><span class="hero-emoji" aria-hidden="true">❄️</span> Refrigeración</span>
+                        <span class="hero-linea"><span class="hero-emoji" aria-hidden="true">🌡️</span> Aire acondicionado</span>
+                        <span class="hero-linea"><span class="hero-emoji" aria-hidden="true">⚡</span> Instalaciones eléctricas</span>
+                        <span class="hero-linea">Soluciones para tu hogar o tu negocio</span>
+                    </h1>
                     <p class="hero-sub">
                         En <strong>ARCES</strong> diseñamos, instalamos y damos mantenimiento a equipos de
                         refrigeración, aire acondicionado y sistemas eléctricos. Soluciones confiables, eficientes y a la medida.
@@ -397,7 +397,7 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-marca">
-<a href="#inicio" class="logo">
+                <a href="#inicio" class="logo">
                     <img class="logo-img" src="logo-transparente.png" alt="ARCES Alpha" width="640" height="522">
                 </a>
                 <p>Refrigeration, Climate &amp; Electrical Systems. Soluciones confiables de refrigeración, aire acondicionado y sistemas eléctricos.</p>
@@ -425,14 +425,14 @@
                 <h4>Contacto</h4>
                 <ul>
                     <li><a href="https://wa.me/526771078799" target="_blank" rel="noopener">+52 677 107 8799</a></li>
-                    <li><a href="mailto:contacto@arcesalpha.com">contacto@arcesalpha.com</a></li>
+                    <li><a href="mailto:admin.arces@gmail.com">admin.arces@gmail.com</a></li>
                     <li>Zona industrial y comercios</li>
                     <li>Lun – Sáb · 8:00 – 19:00</li>
                 </ul>
             </div>
         </div>
         <div class="container footer-frase">
-            <p class="frase">!Enjoy the ride¡</p>
+            <p class="frase">Enjoy the ride!</p>
             <a href="https://wa.me/526771078799?text=Hola%2C%20me%20gustar%C3%ADa%20hablar%20con%20alguien." target="_blank" rel="noopener" class="btn btn-whatsapp">
                 <svg class="icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.051 24c-2.941 0-5.688-.987-7.927-2.793L0 22.63l2.438-3.86A11.868 11.868 0 01.109 12C.109 5.383 5.446.048 12.05.048c6.605 0 11.943 5.335 11.943 11.952 0 6.617-5.338 11.952-11.942 11.952zm5.421-17.187a9.873 9.873 0 00-4.498-1.047c-4.913 0-8.672 3.66-8.672 8.175 0 1.445.51 2.793 1.434 3.868l-.933 2.917 3.008-.917a8.822 8.822 0 004.164 1.054c4.913 0 8.671-3.66 8.671-8.175a8.13 8.13 0 00-3.174-5.875z"/></svg>
                 Escríbenos por WhatsApp
@@ -446,6 +446,53 @@
     <a href="https://wa.me/526771078799?text=Hola%2C%20quiero%20informaci%C3%B3n." target="_blank" rel="noopener" class="flotante" aria-label="Contactar por WhatsApp">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.051 24c-2.941 0-5.688-.987-7.927-2.793L0 22.63l2.438-3.86A11.868 11.868 0 01.109 12C.109 5.383 5.446.048 12.05.048c6.605 0 11.943 5.335 11.943 11.952 0 6.617-5.338 11.952-11.942 11.952zm5.421-17.187a9.873 9.873 0 00-4.498-1.047c-4.913 0-8.672 3.66-8.672 8.175 0 1.445.51 2.793 1.434 3.868l-.933 2.917 3.008-.917a8.822 8.822 0 004.164 1.054c4.913 0 8.671-3.66 8.671-8.175a8.13 8.13 0 00-3.174-5.875z"/></svg>
     </a>
+    <script>
+        (function () {
+            const header = document.querySelector('.header');
+            const boton = document.querySelector('.hamburguesa');
+
+            function menuAbierto() {
+                return header.classList.contains('menu-abierto');
+            }
+
+            function cambiarMenu(abrir) {
+                header.classList.toggle('menu-abierto', abrir);
+                boton.setAttribute('aria-expanded', String(abrir));
+                boton.setAttribute('aria-label', abrir ? 'Cerrar menú' : 'Abrir menú');
+            }
+
+            boton.addEventListener('click', function () {
+                cambiarMenu(!menuAbierto());
+            });
+
+            header.addEventListener('click', function (evento) {
+                if (evento.target.closest('a')) {
+                    cambiarMenu(false);
+                }
+            });
+
+            document.addEventListener('click', function (evento) {
+                if (menuAbierto() && !header.contains(evento.target)) {
+                    cambiarMenu(false);
+                }
+            });
+
+            document.addEventListener('keydown', function (evento) {
+                if (evento.key === 'Escape' && menuAbierto()) {
+                    cambiarMenu(false);
+                    boton.focus();
+                }
+            });
+
+            window.matchMedia('(min-width: 901px)').addEventListener('change', function (evento) {
+                if (evento.matches) {
+                    cambiarMenu(false);
+                }
+            });
+
+            document.getElementById('anio').textContent = new Date().getFullYear();
+        })();
+    </script>
 
 </body>
 </html>
