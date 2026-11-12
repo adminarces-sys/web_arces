@@ -411,6 +411,18 @@ button:focus-visible {
     transform: rotateX(90deg) translateZ(100px);
 }
 
+.cubo-cara:nth-child(4) {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.cubo-cara:nth-child(5) {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cubo-cara:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
 .cara-refri {
     background-color: var(--azul-marino);
     background-image: url('img-refri-icon.svg');
@@ -425,6 +437,22 @@ button:focus-visible {
     background-position: center 42%;
     background-repeat: no-repeat;
     background-size: 66% auto;
+}
+
+.cara-lavadoras {
+    background-color: var(--azul-marino);
+    background-image: url('img-lavadora-icon.svg');
+    background-position: center 36%;
+    background-repeat: no-repeat;
+    background-size: 62% auto;
+}
+
+.cara-automatizacion {
+    background-color: var(--azul-marino);
+    background-image: url('img-automatizacion-icon.svg');
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: 62% auto;
 }
 
 .cara-logo {
@@ -444,6 +472,12 @@ button:focus-visible {
     height: auto;
 }
 
+/* Las caras superior e inferior quedan boca abajo: se endereza el emblema */
+.cubo-cara:nth-child(3) picture,
+.cubo-cara:nth-child(6) picture {
+    transform: rotate(180deg);
+}
+
 .cara-etiqueta {
     position: absolute;
     left: 0;
@@ -458,6 +492,15 @@ button:focus-visible {
     letter-spacing: 0.3px;
     color: var(--blanco);
     background: linear-gradient(transparent, rgba(4, 42, 80, 0.92));
+}
+
+.cara-etiqueta small {
+    display: block;
+    margin-top: 2px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 0.78);
 }
 
 @keyframes girar {
@@ -1166,6 +1209,21 @@ button:focus-visible {
 
     .footer-grid {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1260px) {
+    .logo-lema {
+        display: none;
+    }
+
+    .menu-lista a {
+        padding: 9px 11px;
+    }
+
+    .btn-nav {
+        padding: 12px 18px;
+        white-space: nowrap;
     }
 }
 
