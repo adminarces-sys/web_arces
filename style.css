@@ -378,6 +378,8 @@ button:focus-visible {
     align-items: center;
     justify-content: center;
     min-height: 340px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 
 .cubo {
@@ -387,6 +389,7 @@ button:focus-visible {
     transform-style: preserve-3d;
     transform: rotateX(-26deg) rotateY(40deg);
     animation: girar 26s linear infinite;
+    will-change: transform;
 }
 
 .cubo-cara {
@@ -397,6 +400,8 @@ button:focus-visible {
     overflow: hidden;
     background-size: cover;
     background-position: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .cubo-cara:nth-child(1) {
