@@ -1195,10 +1195,101 @@ button:focus-visible {
     100% { transform: scale(1.45); opacity: 0; }
 }
 
+/* ---------- Productos ---------- */
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.producto {
+    background: var(--blanco);
+    border: 1px solid var(--plata);
+    border-radius: var(--radio);
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    display: flex;
+    flex-direction: column;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra);
+    border-color: rgba(0, 168, 240, 0.45);
+}
+
+.producto-img {
+    background: var(--blanco-frio);
+    display: grid;
+    place-items: center;
+    padding: 18px;
+    border-bottom: 1px solid var(--plata);
+}
+
+.producto-img img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.producto-info {
+    padding: 22px 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.producto-info h3 {
+    font-size: 18px;
+    color: var(--azul-marino);
+}
+
+.producto-info p {
+    font-size: 14.5px;
+    color: var(--gris-acero);
+    flex-grow: 1;
+}
+
+.producto-pie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.producto-precio {
+    font-family: var(--fuente-titulo);
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--azul-marino);
+}
+
+.producto-precio small {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gris-acero);
+}
+
+.producto-btn {
+    padding: 10px 20px;
+    font-size: 13.5px;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 1024px) {
     .grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-productos {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1355,7 +1446,8 @@ button:focus-visible {
     }
 
     .grid-cards,
-    .grid-pasos {
+    .grid-pasos,
+    .grid-productos {
         grid-template-columns: 1fr;
     }
 
