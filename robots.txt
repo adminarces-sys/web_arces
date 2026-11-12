@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adminarces-sys.github.io/web_arces/sitemap.xml

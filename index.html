@@ -4,20 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ARCES Alpha Refrigeration, Climate and Electrical Systems. Refrigeración industrial y comercial, aire acondicionado, clima y sistemas eléctricos para tu empresa u hogar.">
-    <meta name="theme-color" content="#0b2e4f">
+    <meta name="theme-color" content="#063B70">
+    <link rel="canonical" href="https://adminarces-sys.github.io/web_arces/">
     <title>ARCES Alpha | Refrigeración, Clima y Sistemas Eléctricos</title>
-    <link rel="icon" href="logo-transparente.png">
+
+    <!-- Open Graph / WhatsApp / redes sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ARCES Alpha">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:url" content="https://adminarces-sys.github.io/web_arces/">
+    <meta property="og:title" content="ARCES Alpha | Refrigeración, Clima y Sistemas Eléctricos">
+    <meta property="og:description" content="Refrigeración industrial y comercial, aire acondicionado y sistemas eléctricos. Instalación, mantenimiento y reparación para tu hogar o negocio en Río Grande, Zacatecas.">
+    <meta property="og:image" content="https://adminarces-sys.github.io/web_arces/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logotipo de ARCES Alpha con la leyenda Refrigeración, Aire acondicionado y Sistemas eléctricos">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ARCES Alpha | Refrigeración, Clima y Sistemas Eléctricos">
+    <meta name="twitter:description" content="Refrigeración industrial y comercial, aire acondicionado y sistemas eléctricos en Río Grande, Zacatecas.">
+    <meta name="twitter:image" content="https://adminarces-sys.github.io/web_arces/og-image.jpg">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="favicon-180.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "HVACBusiness",
+            "name": "ARCES Alpha Refrigeration, Climate & Electrical Systems",
+            "alternateName": "ARCES Alpha",
+            "url": "https://adminarces-sys.github.io/web_arces/",
+            "logo": "https://adminarces-sys.github.io/web_arces/logo-emblema.png",
+            "image": "https://adminarces-sys.github.io/web_arces/og-image.jpg",
+            "description": "Empresa de refrigeración industrial y comercial, aire acondicionado y sistemas eléctricos. Instalación, mantenimiento preventivo y reparación en Río Grande, Zacatecas.",
+            "telephone": "+52 677 107 8799",
+            "email": "admin.arces@gmail.com",
+            "priceRange": "$$",
+            "areaServed": [
+                { "@type": "City", "name": "Río Grande" },
+                { "@type": "AdministrativeArea", "name": "Zacatecas" }
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Río Grande",
+                "addressRegion": "Zacatecas",
+                "addressCountry": "MX"
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                    "opens": "08:00",
+                    "closes": "19:00"
+                }
+            ],
+            "makesOffer": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigeración comercial e industrial" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aire acondicionado" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas eléctricos" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mantenimiento preventivo" } }
+            ]
+        }
+    </script>
 </head>
 <body>
+
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="header">
         <div class="container header-inner">
             <a href="#inicio" class="logo" aria-label="ARCES Alpha - Inicio">
-                <img class="logo-img" src="logo3-transparente.png" alt="ARCES Alpha" width="640" height="592">
+                <picture>
+                    <source srcset="logo-simbolo.webp" type="image/webp">
+                    <img class="logo-simbolo" src="logo-simbolo.png" alt="" width="200" height="163" decoding="async">
+                </picture>
+                <span class="logo-texto">
+                    <span class="logo-nombre">ARCES <span>Alpha</span></span>
+                    <span class="logo-lema">Refrigeration · Climate · Electrical</span>
+                </span>
             </a>
 
             <nav class="menu" id="menu-principal" aria-label="Navegación principal">
@@ -49,7 +117,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="contenido">
         <section class="hero" id="inicio">
             <div class="container hero-grid">
                 <div class="hero-contenido">
@@ -86,7 +154,10 @@
                             <span class="cara-etiqueta">Aire Acondicionado</span>
                         </div>
                         <div class="cubo-cara cara-logo">
-                            <img src="logo2-transparente.png" alt="ARCES Alpha">
+                            <picture>
+                                <source srcset="logo-emblema.webp" type="image/webp">
+                                <img src="logo-emblema.png" alt="" width="320" height="314" decoding="async">
+                            </picture>
                         </div>
                     </div>
                     <span class="brillo brillo-1"></span>
@@ -354,7 +425,7 @@
                         </span>
                         <div>
                             <strong>Teléfono / WhatsApp</strong>
-                            <a href="https://wa.me/526771078799" target="_blank" rel="noopener">+52 677 107 8799</a>
+                            <a href="tel:+526771078799">+52 677 107 8799</a>
                         </div>
                     </div>
                     <div class="contacto-item">
@@ -397,8 +468,15 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-marca">
-                <a href="#inicio" class="logo">
-                    <img class="logo-img" src="logo-transparente.png" alt="ARCES Alpha" width="640" height="522">
+                <a href="#inicio" class="logo" aria-label="ARCES Alpha - Inicio">
+                    <picture>
+                        <source srcset="logo-simbolo.webp" type="image/webp">
+                        <img class="logo-simbolo" src="logo-simbolo.png" alt="" width="200" height="163" loading="lazy" decoding="async">
+                    </picture>
+                    <span class="logo-texto">
+                        <span class="logo-nombre">ARCES <span>Alpha</span></span>
+                        <span class="logo-lema">Refrigeration · Climate · Electrical</span>
+                    </span>
                 </a>
                 <p>Refrigeration, Climate &amp; Electrical Systems. Soluciones confiables de refrigeración, aire acondicionado y sistemas eléctricos.</p>
             </div>
@@ -424,7 +502,7 @@
             <div class="footer-col">
                 <h4>Contacto</h4>
                 <ul>
-                    <li><a href="https://wa.me/526771078799" target="_blank" rel="noopener">+52 677 107 8799</a></li>
+                    <li><a href="tel:+526771078799">+52 677 107 8799</a></li>
                     <li><a href="mailto:admin.arces@gmail.com">admin.arces@gmail.com</a></li>
                     <li>Zona industrial y comercios</li>
                     <li>Lun – Sáb · 8:00 – 19:00</li>
