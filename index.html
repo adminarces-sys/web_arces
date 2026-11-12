@@ -284,8 +284,14 @@
                     <h2>Equipos y soluciones que ofrecemos</h2>
                     <p>Equipos de refrigeración y aire acondicionado listos para instalar. Precios en pesos mexicanos (MXN). Cotiza por WhatsApp para disponibilidad y envío.</p>
                 </div>
+                <div class="filtros-productos" role="group" aria-label="Filtrar productos por categoría">
+                    <button type="button" class="filtro-btn is-active" data-filtro="todos">Todos</button>
+                    <button type="button" class="filtro-btn" data-filtro="refrigeracion">Refrigeración</button>
+                    <button type="button" class="filtro-btn" data-filtro="aire">Aire acondicionado</button>
+                    <button type="button" class="filtro-btn" data-filtro="mantenimiento">Mantenimiento</button>
+                </div>
                 <div class="grid-productos">
-                    <article class="producto">
+                    <article class="producto" data-categoria="aire">
                         <div class="producto-img">
                             <img src="prod-minisplit.svg" alt="Mini Split 1 tonelada" width="400" height="300" loading="lazy" decoding="async">
                         </div>
@@ -298,7 +304,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="producto">
+                    <article class="producto" data-categoria="refrigeracion">
                         <div class="producto-img">
                             <img src="prod-refri.svg" alt="Refrigerador comercial" width="400" height="300" loading="lazy" decoding="async">
                         </div>
@@ -311,7 +317,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="producto">
+                    <article class="producto" data-categoria="refrigeracion">
                         <div class="producto-img">
                             <img src="prod-camara.svg" alt="Cámara fría 3x3 metros" width="400" height="300" loading="lazy" decoding="async">
                         </div>
@@ -324,7 +330,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="producto">
+                    <article class="producto" data-categoria="aire">
                         <div class="producto-img">
                             <img src="prod-central.svg" alt="Aire acondicionado central 5 toneladas" width="400" height="300" loading="lazy" decoding="async">
                         </div>
@@ -337,7 +343,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="producto">
+                    <article class="producto" data-categoria="mantenimiento">
                         <div class="producto-img">
                             <img src="prod-mantenimiento.svg" alt="Mantenimiento preventivo anual" width="400" height="300" loading="lazy" decoding="async">
                         </div>
@@ -661,6 +667,29 @@
             });
 
             document.getElementById('anio').textContent = new Date().getFullYear();
+        })();
+
+        // Filtros de productos
+        (function () {
+            const botones = document.querySelectorAll('.filtro-btn');
+            const productos = document.querySelectorAll('.producto');
+
+            botones.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    const filtro = btn.getAttribute('data-filtro');
+                    botones.forEach(function (b) { b.classList.remove('is-active'); });
+                    btn.classList.add('is-active');
+
+                    productos.forEach(function (p) {
+                        const cat = p.getAttribute('data-categoria');
+                        if (filtro === 'todos' || cat === filtro) {
+                            p.style.display = '';
+                        } else {
+                            p.style.display = 'none';
+                        }
+                    });
+                });
+            });
         })();
     </script>
 
