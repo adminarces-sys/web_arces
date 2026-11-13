@@ -643,7 +643,7 @@
                     art.setAttribute('data-categoria', p.categoria);
                     art.innerHTML =
                         '<div class="producto-img">' +
-                            '<img src="img/productos/' + p.sku + '.jpg" alt="' + p.alt + '" width="400" height="300" loading="lazy" decoding="async" onerror="window.imgFallback(this, \' + p.sku + \')">' +
+                            '<img src="img/productos/' + p.sku + '.jpg" alt="' + p.alt + '" width="400" height="300" loading="lazy" decoding="async" data-sku="' + p.sku + '" onerror="window.imgFallback(this)">' +
                         '</div>' +
                         '<div class="producto-info">' +
                             '<h3>' + p.nombre + '</h3>' +
@@ -774,7 +774,8 @@
             cargarCarrito();
             actualizarCarritoUI();
 
-        window.imgFallback = function (img, sku) {
+        window.imgFallback = function (img) {
+            var sku = img.dataset.sku;
             console.log('imgFallback called for', sku, 'current src:', img.src);
             var exts = ['.png', '.svg', '.webp'];
             var idx = parseInt(img.dataset.extIdx || '0', 10);
