@@ -1,11 +1,11 @@
-[
+﻿[
   {
     "id": "minisplit-1ton",
     "nombre": "Mini Split 1 Tonelada",
-    "descripcion": "Equipo de aire acondicionado inverter de alta eficiencia. Ideal para recámaras y oficinas pequeñas. Incluye instalación básica.",
+    "descripcion": "Equipo de aire acondicionado inverter de alta eficiencia. Ideal para recÃ¡maras y oficinas pequeÃ±as. Incluye instalaciÃ³n bÃ¡sica.",
     "precio": 8500,
     "precioTexto": "$8,500 MXN",
-    "imagen": "prod-minisplit.svg",
+    "imagen": "img/productos/prod-minisplit.svg",
     "alt": "Mini Split 1 tonelada",
     "categoria": "aire",
     "whatsapp": "Hola%2C%20me%20interesa%20el%20Mini%20Split%201%20Tonelada."
@@ -16,19 +16,19 @@
     "descripcion": "Refrigerador vertical de acero inoxidable con 2 puertas de cristal. Ideal para tiendas, restaurantes y supermercados.",
     "precio": 15900,
     "precioTexto": "$15,900 MXN",
-    "imagen": "prod-refri.svg",
+    "imagen": "img/productos/prod-refri.svg",
     "alt": "Refrigerador comercial",
     "categoria": "refrigeracion",
     "whatsapp": "Hola%2C%20me%20interesa%20el%20Refrigerador%20Comercial%202%20Puertas."
   },
   {
     "id": "camara-3x3",
-    "nombre": "Cámara Fría 3 × 3 m",
-    "descripcion": "Cuarto frío modular con paneles aislantes y equipo de refrigeración. Perfecto para conservación de alimentos.",
+    "nombre": "CÃ¡mara FrÃ­a 3 Ã— 3 m",
+    "descripcion": "Cuarto frÃ­o modular con paneles aislantes y equipo de refrigeraciÃ³n. Perfecto para conservaciÃ³n de alimentos.",
     "precio": 45000,
     "precioTexto": "$45,000 MXN",
-    "imagen": "prod-camara.svg",
-    "alt": "Cámara fría 3x3 metros",
+    "imagen": "img/productos/prod-camara.svg",
+    "alt": "CÃ¡mara frÃ­a 3x3 metros",
     "categoria": "refrigeracion",
     "whatsapp": "Hola%2C%20me%20interesa%20la%20C%C3%A1mara%20Fr%C3%ADa%203x3."
   },
@@ -38,7 +38,7 @@
     "descripcion": "Sistema central de aire acondicionado para oficinas, comercios y naves industriales. Incluye tablero de control.",
     "precio": 32000,
     "precioTexto": "$32,000 MXN",
-    "imagen": "prod-central.svg",
+    "imagen": "img/productos/prod-central.svg",
     "alt": "Aire acondicionado central 5 toneladas",
     "categoria": "aire",
     "whatsapp": "Hola%2C%20me%20interesa%20el%20Aire%20Acondicionado%20Central%205%20Ton."
@@ -46,10 +46,10 @@
   {
     "id": "mantenimiento-anual",
     "nombre": "Mantenimiento Preventivo Anual",
-    "descripcion": "Plan anual de mantenimiento para equipos de refrigeración y aire acondicionado. Incluye 2 visitas y reporte técnico.",
+    "descripcion": "Plan anual de mantenimiento para equipos de refrigeraciÃ³n y aire acondicionado. Incluye 2 visitas y reporte tÃ©cnico.",
     "precio": 2500,
-    "precioTexto": "$2,500 MXN/año",
-    "imagen": "prod-mantenimiento.svg",
+    "precioTexto": "$2,500 MXN/aÃ±o",
+    "imagen": "img/productos/prod-mantenimiento.svg",
     "alt": "Mantenimiento preventivo anual",
     "categoria": "mantenimiento",
     "whatsapp": "Hola%2C%20me%20interesa%20el%20Mantenimiento%20Preventivo%20Anual."
