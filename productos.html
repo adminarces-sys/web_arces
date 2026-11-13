@@ -301,7 +301,7 @@
                     art.setAttribute('data-categoria', p.categoria);
                     art.innerHTML =
                         '<div class="producto-img">' +
-                            '<img src="img/productos/' + p.sku + '.jpg" alt="' + p.alt + '" width="400" height="300" loading="lazy" decoding="async" onerror="window.imgFallback(this, '' + p.sku + '')">' +
+                            '<img src="img/productos/' + p.sku + '.jpg" alt="' + p.alt + '" width="400" height="300" loading="lazy" decoding="async" onerror="window.imgFallback(this, \' + p.sku + \')">' +
                         '</div>' +
                         '<div class="producto-info">' +
                             '<h3>' + p.nombre + '</h3>' +
@@ -309,7 +309,7 @@
                             '<div class="producto-pie">' +
                                 '<span class="producto-precio">' + p.precioTexto + '</span>' +
                                 '<div class="producto-acciones">' +
-                                    '<button type="button" class="btn btn-linea producto-btn btn-agregar" data-id="' + p.id + '">Agregar</button>' +
+                                    '<button type="button" class="btn btn-linea producto-btn btn-agregar" data-id="' + p.sku + '">Agregar</button>' +
                                     '<a href="https://wa.me/526771078799?text=' + p.whatsapp + '" target="_blank" rel="noopener" class="btn btn-whatsapp producto-btn">Cotizar</a>' +
                                 '</div>' +
                             '</div>' +
@@ -378,13 +378,13 @@
             }
 
             function agregarAlCarrito(id) {
-                const p = productos.find(function (x) { return x.id === id; });
+                const p = productos.find(function (x) { return x.sku === id; });
                 if (!p) return;
                 const existente = carrito.find(function (x) { return x.id === id; });
                 if (existente) {
                     existente.cantidad += 1;
                 } else {
-                    carrito.push({ id: p.id, nombre: p.nombre, precio: p.precio, cantidad: 1 });
+                    carrito.push({ id: p.sku, nombre: p.nombre, precio: p.precio, cantidad: 1 });
                 }
                 guardarCarrito();
                 actualizarCarritoUI();
@@ -423,7 +423,7 @@
             });
 
             // Delegación para botones "Agregar"
-            grid.addEventListener('click', function (e) {
+            if (grid) grid.addEventListener('click', function (e) {
                 const btn = e.target.closest('.btn-agregar');
                 if (btn) agregarAlCarrito(btn.getAttribute('data-id'));
             });
