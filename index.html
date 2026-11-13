@@ -643,7 +643,7 @@
                     art.setAttribute('data-categoria', p.categoria);
                     art.innerHTML =
                         '<div class="producto-img">' +
-                            '<img src="img/productos/' + p.sku + '.jpg" alt="' + p.alt + '" width="400" height="300" loading="lazy" decoding="async" onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='img/productos/' + p.sku + '.svg'}else{this.src='img/productos/placeholder.svg';this.onerror=null;}">' +
+                            '<img src="img/productos/' + p.sku + '.jpg" alt="' + p.alt + '" width="400" height="300" loading="lazy" decoding="async" onerror="window.imgFallback(this, '' + p.sku + '')">' +
                         '</div>' +
                         '<div class="producto-info">' +
                             '<h3>' + p.nombre + '</h3>' +
@@ -773,6 +773,18 @@
             // Cargar productos
             cargarCarrito();
             actualizarCarritoUI();
+
+        window.imgFallback = function (img, sku) {
+            var exts = ['.png', '.svg', '.webp'];
+            var idx = parseInt(img.dataset.extIdx || '0', 10);
+            if (idx < exts.length) {
+                img.dataset.extIdx = idx + 1;
+                img.src = 'img/productos/' + sku + exts[idx];
+            } else {
+                img.src = 'img/productos/placeholder.svg';
+                img.onerror = null;
+            }
+        };
 
             fetch('products.json')
                 .then(function (res) { return res.json(); })

@@ -58,5 +58,15 @@
     "alt": "Termostato digital",
     "categoria": "aire",
     "whatsapp": "Hola%2C%20me%20interesa%20el%20Termostato%20Digital."
+  },
+  {
+    "sku": "285967",
+    "nombre": "Equipo SKU 285967",
+    "descripcion": "EDITAR: descripción del equipo con SKU 285967.",
+    "precio": 0,
+    "precioTexto": "Consultar",
+    "alt": "Equipo SKU 285967",
+    "categoria": "aire",
+    "whatsapp": "Hola%2C%20me%20interesa%20el%20equipo%20con%20SKU%20285967."
   }
 ]
