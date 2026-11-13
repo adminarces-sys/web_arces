@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="g6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#063B70"/>
+      <stop offset="1" stop-color="#087AC9"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g6)"/>
+  <!-- termostato -->
+  <rect x="130" y="70" width="140" height="160" rx="18" fill="#ffffff" opacity="0.95"/>
+  <circle cx="200" cy="140" r="46" fill="#F4F7F9" stroke="#00A8F0" stroke-width="4"/>
+  <text x="200" y="150" font-family="Montserrat, sans-serif" font-size="26" font-weight="800" fill="#063B70" text-anchor="middle">24°</text>
+  <rect x="170" y="195" width="60" height="10" rx="5" fill="#BFC8D0"/>
+  <text x="200" y="45" font-family="Montserrat, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Termostato Digital</text>
+</svg>

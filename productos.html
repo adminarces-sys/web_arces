@@ -301,7 +301,7 @@
                     art.setAttribute('data-categoria', p.categoria);
                     art.innerHTML =
                         '<div class="producto-img">' +
-                            '<img src="' + p.imagen + '" alt="' + p.alt + '" width="400" height="300" loading="lazy" decoding="async">' +
+                            '<img src="img/productos/' + p.sku + '.jpg" alt="' + p.alt + '" width="400" height="300" loading="lazy" decoding="async" onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='img/productos/' + p.sku + '.svg'}else{this.src='img/productos/placeholder.svg';this.onerror=null;}">' +
                         '</div>' +
                         '<div class="producto-info">' +
                             '<h3>' + p.nombre + '</h3>' +
