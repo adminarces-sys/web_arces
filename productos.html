@@ -434,16 +434,13 @@
 
         window.imgFallback = function (img) {
             var sku = img.dataset.sku;
-            console.log('imgFallback called for', sku, 'current src:', img.src);
             var exts = ['.png', '.svg', '.webp'];
             var idx = parseInt(img.dataset.extIdx || '0', 10);
             if (idx < exts.length) {
                 img.dataset.extIdx = idx + 1;
                 var nextSrc = 'img/productos/' + sku + exts[idx];
-                console.log('  trying:', nextSrc);
                 img.src = nextSrc;
             } else {
-                console.log('  all failed, using placeholder');
                 img.src = 'img/productos/placeholder.svg';
                 img.onerror = null;
             }
